@@ -6,7 +6,9 @@ UKCloud accepts no liability for loss or damage through use of this scipt.
 
 ### Installation
 Clone this repo into a directory.
-Ensure your running python3. (We would recomend a virtual env)
+
+Ensure your running python3. (We would recomend a virtual env).
+
 Ensure you have python-openstacksdk installed.
 
 ### Using the script
