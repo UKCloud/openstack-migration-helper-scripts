@@ -44,9 +44,10 @@ ABCDEFG123-security.csv
 
 
 
-To import the configuration to a new project: 
+#### To import the configuration to a new project: 
 
 Source the RC file for the new project ensuring it has access to the /tmp directory where the files were created.
+
 Then run;
 
 network_secgroup_mover.py -s "{SourceProjectID}" -r "{SourceRegionID}" -d "{DestinationProjectID}" -p "import"  
