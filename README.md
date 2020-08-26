@@ -1,15 +1,15 @@
-##UKCloud Network/Security group migration helper tool.
+## UKCloud Network/Security group migration helper tool.
 
-###Disclaimer
+### Disclaimer
 This script is provided as is with no gaurentee or warrenty, bugs or suggestions may be submited through github issues.
 UKCloud accepts no liability for loss or damage through use of this scipt.
 
-###Installation
+### Installation
 Clone this repo into a directory.
 Ensure your running python3. (We would recomend a virtual env)
 Ensure you have python-openstacksdk installed.
 
-###Using the script
+### Using the script
 
 To export a set of data from a project:
 Source the rc file for the host project
