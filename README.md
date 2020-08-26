@@ -11,7 +11,7 @@ Ensure you have python-openstacksdk installed.
 
 ### Using the script
 
-To export a set of data from a project:
+#### To export a set of data from a project:
 
 Source the rc file for the host project
 
@@ -28,7 +28,9 @@ python network_secgroup_mover.py -s "ABCDEFG123" -r "RegionOne" -p export
 Exporting the data will create three files in the /tmp/"region" directory   
 
 "source project id"-networks.csv
+
 "source project id"-subnet.csv  
+
 "source project id"-security.csv
 
 eg.
