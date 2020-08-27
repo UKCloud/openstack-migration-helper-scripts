@@ -1,13 +1,16 @@
-## UKCloud Network/Security group migration helper tool.
+## UKCloud Network/Security group migration helper tool
 
 ### Disclaimer
-This script is provided as is with no gaurentee or warrenty, bugs or suggestions may be submited through github issues.
-UKCloud accepts no liability for loss or damage through use of this scipt.
+
+This script is provided as is with no guarantee or warranty. Bugs or suggestions may be submitted through GitHub Issues.
+
+UKCloud accepts no liability for loss or damage through use of this script.
 
 ### Installation
+
 Clone this repo into a directory.
 
-Ensure your running python3. (We would recomend a virtual env).
+Ensure you're running python3. (We would recommend a virtual env.)
 
 Ensure you have python-openstacksdk installed.
 
@@ -15,19 +18,19 @@ Ensure you have python-openstacksdk installed.
 
 #### To export a set of data from a project:
 
-Source the rc file for the host project
+Source the rc file for the host project.
 
-Then run;
+Then run:
 
 network_secgroup_mover.py -s "{SourceProjectID}" -r "{SourceRegionID}" -p "export"
 
-eg.
+For example:
 
 source project1.rc
 
 python network_secgroup_mover.py -s "ABCDEFG123" -r "RegionOne" -p export
 
-Exporting the data will create three files in the /tmp/"region" directory   
+Exporting the data will create three files in the /tmp/"region" directory:
 
 "source project id"-networks.csv
 
@@ -35,7 +38,8 @@ Exporting the data will create three files in the /tmp/"region" directory
 
 "source project id"-security.csv
 
-eg.
+For example:
+
 /tmp/RegionOne/
 
 ABCDEFG123-networks.csv
@@ -44,17 +48,16 @@ ABCDEFG123-subnet.csv
 
 ABCDEFG123-security.csv
 
-
-
 #### To import the configuration to a new project: 
 
-Source the RC file for the new project ensuring it has access to the /tmp directory where the files were created.
+Source the rc file for the new project, ensuring it has access to the /tmp directory where the files were created.
 
-Then run;
+Then run:
 
 network_secgroup_mover.py -s "{SourceProjectID}" -r "{SourceRegionID}" -d "{DestinationProjectID}" -p "import"  
 
-eg.
+For example:
+
 source destproject.rc
 
 python network_secgroup_mover.py -s "{SourceProjectID}" -r "{SourceRegionID}" -d "{DestinationProjectID}" -p "import"
